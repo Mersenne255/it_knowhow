@@ -20,7 +20,7 @@ then
     exit 0 
 fi 
 
-GIT_COMMITTER_DATE=`date --date="$TIMESTAMP"` 
+GIT_COMMITTER_DATE=`LC_ALL=en.utf8 date --date="$TIMESTAMP"` 
 AUTHOR_DATE=$GIT_COMMITTER_DATE
 export GIT_COMMITTER_DATE
 if [[ "$TYPE" == 'a' ]]
