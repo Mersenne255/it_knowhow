@@ -1,0 +1,8 @@
+[Unit]
+After=network.target
+
+[Service]
+ExecStart=/home/martin/work/projects/it_knowhow/linux_commands/move_mouse.sh
+
+[Install]
+WantedBy=default.target
